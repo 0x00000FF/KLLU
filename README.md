@@ -1,7 +1,7 @@
 # KLLU
 A Scalable Logic Lab Unit That Implemented in Software Form
 
-KLLU is an abbreviation for Knowledge's Logic Lab Unit. This software is written in C#, and runs on any .NET compliant system. This project aims to implement completely functional emulated LLU, so that can be used for available logic circuit education.
+KLLU is an abbreviation for Knowledge's Logic Lab Unit. This project aims to implement completely functional emulated LLU, so that can be used for available logic circuit education.
 
 ## Specification
 - 1 GND, 1 +-5V, 1 9V, 1 +-15V, 1 AC 5V(Variable Frequency),
