@@ -8,6 +8,7 @@ KLLU is an abbreviation for Knowledge's Logic Lab Unit. This project aims to imp
 - Voltage load meter, Overload warning, Variable resistance
 - 16 input switches, 8(4+4) output LED and Hexadecimal printer, Common mode changer(Cathode-Anode)
 - 3 Variable clock generator and outputs
+- 2 Simple Oscilloscopes for specified input
 
 ## Why did you make this?
 For I'm a CS undergradate student(2019), I took a logic design course and the equipment does not work properly even lines/units were right place. This made me really annoyed, so I decided to make this program.
