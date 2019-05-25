@@ -7,16 +7,18 @@ set(CMAKE_CXX_STANDARD 17)
 
 if (WIN32)
 	include("$ENV{AppData}/VcPkg/scripts/buildsystems/vcpkg.cmake")
-
 	
 	set(SFML_STATIC_LIBRARIES FALSE)
-	find_package(SFML CONFIG REQUIRED graphics audio)
 	set(SFML_INCLUDE "${SFML_DIR}/../../include")
-
+	
+	set(WIN32_SET WIN32)
 endif()
 
+find_package(SFML CONFIG REQUIRED graphics audio)
+
 # Add source to this project's executable.
-add_executable (KLLU "KLLU.cpp")
+file(GLOB KLLU_CPP_SRC "*.cpp" "Classes/*.cpp")
+add_executable (KLLU ${WIN32_SET} ${KLLU_CPP_SRC})
 
 if(SFML_FOUND)
   target_include_directories(KLLU PUBLIC ${SFML_INCLUDE})
